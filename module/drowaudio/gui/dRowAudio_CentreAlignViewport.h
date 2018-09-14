@@ -219,13 +219,13 @@ public:
 
         Handy if you need to customise the bar somehow.
     */
-    ScrollBar* getVerticalScrollBar() noexcept { return &verticalScrollBar; }
-
+    ScrollBar& getVerticalScrollBar() noexcept  { return verticalScrollBar; }
+    
     /** Returns a pointer to the scrollbar component being used.
 
         Handy if you need to customise the bar somehow.
     */
-    ScrollBar* getHorizontalScrollBar() noexcept { return &horizontalScrollBar; }
+    ScrollBar& getHorizontalScrollBar() noexcept { return horizontalScrollBar; }
 
     //==============================================================================
     /** Tells the viewport whether or not to centre its content component. */
