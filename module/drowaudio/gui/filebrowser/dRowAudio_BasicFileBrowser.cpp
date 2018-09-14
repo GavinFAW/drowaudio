@@ -79,7 +79,7 @@ BasicFileBrowser::BasicFileBrowser (int flags_,
     addAndMakeVisible (list);
 
     fileListComponent->addListener (this);
-    list->getViewport()->getVerticalScrollBar()->setAutoHide (false);
+    list->getViewport()->getVerticalScrollBar().setAutoHide (false);
 
     resizer = new ResizableCornerComponent (this, &resizeLimits);
     addAndMakeVisible (resizer);

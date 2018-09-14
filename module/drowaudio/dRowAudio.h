@@ -137,12 +137,30 @@
     @date 2008
     @copyright Copyright (C) 2013 by David Rowland.
     @copyright Provided under the [The MIT License][5]
-*/
+ 
+    BEGIN_JUCE_MODULE_DECLARATION
+ 
+    ID:               dRowAudio
+    vendor:           drow
+    version:          1.0.0
+    name:             drow audio class
+    description:      Classes for audio-related GUI and miscellaneous tasks.
+    website:          http://drowaudio.co.uk/docs/
+    license:          GPL/Commercial
+
+    dependencies:     juce_audio_utils, juce_gui_basics, juce_cryptography, juce_audio_devices
+    OSXFrameworks:    DiscRecording
+    iOSFrameworks:    CoreAudioKit
+
+    END_JUCE_MODULE_DECLARATION
+
+ */
 
 //=============================================================================
-#include <modules/juce_audio_utils/juce_audio_utils.h>
-#include <modules/juce_gui_basics/juce_gui_basics.h>
-#include <modules/juce_cryptography/juce_cryptography.h>
+#include <juce_audio_utils/juce_audio_utils.h>
+#include <juce_gui_basics/juce_gui_basics.h>
+#include <juce_cryptography/juce_cryptography.h>
+
 
 #undef min
 #undef max
